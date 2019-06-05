@@ -1,6 +1,5 @@
 alias nbash="nano ~/.bash_profile" 
 alias sbash="source ~/.bash_profile" 
-alias sbash="source ~/.bash_profile" 
 alias gs="git status" 
 alias ga="git add script.py" 
 alias gc="git commit -m" 
