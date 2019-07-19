@@ -160,11 +160,11 @@ def cipher_bot():
 
 #Gathers offset and message input to encode message
 def encode_bot():
-    offset_request_message = "\nPlease provide an offset (between 0 and 27): "
+    offset_request_message = "\nPlease provide an offset (between 0 and 26): "
     message_request_message = "\nPlease provide a message to encode (in lowercase): "
     offset_response = int(input(offset_request_message))
     message_response = str(input(message_request_message))
-    if offset_response > 0 and offset_response < 27:
+    if offset_response > 0 and offset_response < 26:
         print("\nENCODED TEXT: " + encode_message(offset_response, message_response) + "\n\n")
         return_to_menu()
     else:
@@ -173,11 +173,11 @@ def encode_bot():
 
 #Gathers offset and message input to decode message
 def decode_bot():
-    offset_request_message = "\nPlease provide an offset (between 0 and 27): "
+    offset_request_message = "\nPlease provide an offset (between 0 and 26): "
     message_request_message = "\nPlease provide a message to decode (in lowercase): "
     offset_response = int(input(offset_request_message))
     message_response = str(input(message_request_message))
-    if offset_response > 0 and offset_response < 27:
+    if offset_response > 0 and offset_response < 26:
         print("\nDECODED TEXT: " + decode_message(offset_response, message_response) + "\n\n")
         return_to_menu()
     else:
