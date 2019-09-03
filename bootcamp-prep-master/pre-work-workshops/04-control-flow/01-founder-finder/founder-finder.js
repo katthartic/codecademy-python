@@ -5,3 +5,8 @@ let name = 'David';
 let found;
 
 // YOUR CODE BELOW
+if (name === 'David' || name === 'Nimit') {
+    found = true;
+} else {
+    found = false;
+}
