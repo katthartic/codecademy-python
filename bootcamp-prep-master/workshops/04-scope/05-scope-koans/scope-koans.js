@@ -22,11 +22,11 @@ function helperFunc(a) { //undefined
 
 
 // Test Three Restrictions: Type only a single character in either testThree or getMessage
-let testThreeMessage = 'test failing'; //test succeeding
+let testThreeMessage = 'test failing';
 
 function testThree(testThreeMessage) { //true
   if (testThreeMessage) { //true
-    testThreeMessage = 'test succeeding'; //test succeeding
+    testThreeMessage = 'test succeeding'; //test succeeding - changes argument, not global
   }
 
   let msg = getMessage();
@@ -34,7 +34,7 @@ function testThree(testThreeMessage) { //true
 
   function getMessage(value) { //undefined
     if (!value) { //true
-      return testThreeMessage;
+      return testThreeMessage; //grabs argument, not global
     }
 
     return 'test failing';
