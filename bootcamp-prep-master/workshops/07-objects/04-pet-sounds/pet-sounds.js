@@ -52,3 +52,29 @@ function petSounds(animal,country) {
   let sound = animalNoises[2][animal][country]
   return `Chickens in ${country} say ${sound}`}
 }
+
+// function capitalize(str) {
+//   return str[0].toUpperCase() + str.slice(1)
+//  }
+ 
+//  function petSounds(animal,country) {
+//    for (let i = 0; i < animalNoises.length; i++){
+//      const obj = animalNoises[i]
+//      const codex = obj[animal]
+//      if (codex) {
+//        const sound = codex[country]
+//        return capitalize(`${animal}s in ${country} say ${sound}`)
+//      }
+//    }
+//  }
+ 
+ // function petSounds(animal,country) {
+ //   for (let i = 0; i < animalNoises.length; i++){
+ //     const obj = animalNoises[i]
+ //     if (animal in obj) {
+ //       const codex = obj[animal]
+ //       const sound = codex[country]   
+ //       return `${animal}s in ${country} say ${sound}` 
+ //     }
+ //   }
+ // }
