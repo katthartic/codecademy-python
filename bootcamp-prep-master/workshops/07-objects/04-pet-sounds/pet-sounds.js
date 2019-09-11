@@ -38,3 +38,19 @@ let animalNoises = [
 ];
 
 // YOUR CODE BELOW
+function petSounds(animal,country) {
+  //Dogs
+  if (animal === 'dog') {
+  let sound = animalNoises[0][animal][country]
+  return `Dogs in ${country} say ${sound}`}
+  //Cats
+  if (animal === 'cat') {
+  let sound = animalNoises[1][animal][country]
+  return `Cats in ${country} say ${sound}`}
+  //Chickens
+  if (animal === 'chicken') {
+  let sound = animalNoises[2][animal][country]
+  return `Chickens in ${country} say ${sound}`}
+}
+
+petSounds('dog', 'Iceland');
