@@ -52,5 +52,3 @@ function petSounds(animal,country) {
   let sound = animalNoises[2][animal][country]
   return `Chickens in ${country} say ${sound}`}
 }
-
-petSounds('dog', 'Iceland');
