@@ -1,7 +1,7 @@
 // YOUR CODE BELOW
-let me = {
+me = {
     name: 'Kat',
-    getGreeting: function() {
-        console.log(`Hi, my name is ${name}`)
+    getGreeting: function(){
+     return (`Hi, my name is ${this.name}.`);
     }
-}
+   };
